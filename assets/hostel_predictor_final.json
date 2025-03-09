@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "69fa1945-962b-448e-8e68-8726da6b24fe",
+		"name": "Hostel Admission API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23170999"
+	},
+	"item": [
+		{
+			"name": "Predict Hostel Admission",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n                        \"income\": 50000,\n                        \"sgpa\": 8.5,\n                        \"district\": \"Kollam\",//Options: [Trivandrum, Kollam, Pathanamthitta, Alappuzha, Kottayam, Idukki, Ernakulam, Trichur, Palakkad, Malappuram, Calicut, Kannur, Kasaragod, Wayanad]\n                        \"category\": \"OBC\",//\n                        \"gender\": \"male\",// [male, female]\n                        \"semester\": \"S5\"// Options: [S3, S5, S7]\n                    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ml-predictor-0sly.onrender.com/predict",
+					"protocol": "https",
+					"host": [
+						"ml-predictor-0sly",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"predict"
+					]
+				},
+				"description": "Predict hostel admission based on user details."
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:5000"
+		},
+		{
+			"key": "district_options",
+			"value": "[\"Trivandrum\", \"Kollam\", \"Pathanamthitta\", \"Alappuzha\", \"Kottayam\", \"Idukki\", \"Ernakulam\", \"Trichur\", \"Palakkad\", \"Malappuram\", \"Calicut\", \"Kannur\", \"Kasaragod\", \"Wayanad\"]"
+		},
+		{
+			"key": "category_options",
+			"value": "[\"SC\", \"ST\", \"OBC\", \"GENERAL\", \"BPL\", \"OEC\"]"
+		},
+		{
+			"key": "gender_options",
+			"value": "[\"male\", \"female\"]"
+		},
+		{
+			"key": "semester_options",
+			"value": "[\"S3\", \"S5\", \"S7\"]"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "426337932545",
+    "project_id": "gecw-stay",
+    "storage_bucket": "gecw-stay.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426337932545:android:ed3b15b349dd2e752ab700",
+        "android_client_info": {
+          "package_name": "com.example.gecw_lakx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD--Chu8THyGNkDGP_-PFUHZXPj54iScT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
